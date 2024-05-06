@@ -1,12 +1,16 @@
 
 import './App.css'
+import NavBar from './components/NavBar.tsx';
+import VideoBackground from './components/VideoBackground.tsx';
 
 function App() {
 
   return (
-    <>
-      <p className='text-5xl text-red-600'>START</p>
-    </>
+    <div >
+      <NavBar />
+      {/* <VideoBackground /> */}
+
+    </div>
   )
 }
 
