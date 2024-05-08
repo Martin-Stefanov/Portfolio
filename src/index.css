@@ -5,5 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Aladin&family=Amarante&family=Angkor&family=Briem+Hand:wght@100..900&family=Dancing+Script&family=Madimi+One&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Revolution&display=swap');
 
 .main-button{
-  @apply self-center block h-fit w-fit py-4 px-4 text-5xl text-red-950 font-bold hover:border-2 hover:border-jaya-200 hover:rounded-md hover:shadow-md font-briem;
+  @apply self-center block h-fit w-fit py-4 px-4 text-5xl text-red-950 font-bold hover:opacity-50 font-briem;
 }
+
+
+
+
+/* @apply self-center block h-fit w-fit py-4 px-4 text-5xl text-red-950 font-bold hover:border-2 hover:border-jaya-200 hover:rounded-md hover:shadow-md font-briem; */
