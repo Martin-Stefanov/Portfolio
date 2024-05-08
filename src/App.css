@@ -1,0 +1,4 @@
+#buttons-box {
+  backdrop-filter: blur(5px);
+  box-shadow: 4px 4px 60px rgba(255, 255, 255, 0.9);
+}
