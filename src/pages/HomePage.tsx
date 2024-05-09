@@ -7,7 +7,7 @@ const HomePage = () => {
   const navigate = useNavigate();
 
   return (
-    <div className=' bg-palms bg-cover min-h-screen w-full'>
+    <div className=' bg-palms bg-cover h-[100vh] w-full'>
      
       {/* <VideoBackground /> */}
       <div className='flex justify-end items-center'>
