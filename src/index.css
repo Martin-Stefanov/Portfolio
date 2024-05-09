@@ -4,11 +4,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Aladin&family=Amarante&family=Angkor&family=Briem+Hand:wght@100..900&family=Dancing+Script&family=Madimi+One&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Revolution&display=swap');
 
-.main-button{
+.main-button {
   @apply self-center block h-fit w-fit py-4 px-4 text-5xl text-red-950 font-bold hover:opacity-50 font-briem;
 }
 
+.card-container{
+  @apply w-64 h-96 mt-64;
+  perspective: 1000px;
+}
+.card {
+  @apply w-[100%] h-[100%] relative;
+  transition: transform 1s;
+  transform-style: preserve-3d ;
+}
+.card-container:hover .card {
+  transform: rotateY(180deg);
+}
 
-
-
-/* @apply self-center block h-fit w-fit py-4 px-4 text-5xl text-red-950 font-bold hover:border-2 hover:border-jaya-200 hover:rounded-md hover:shadow-md font-briem; */
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+}
+.card-front {
+  @apply w-[100%] h-[100%] bg-gray-500 absolute text-white rounded-md shadow-black shadow-md;
+}
+.card-back  {
+  @apply w-[100%] h-[100%] bg-gray-950 absolute text-white rounded-md shadow-black shadow-md;
+  transform: rotateY(180deg);
+}

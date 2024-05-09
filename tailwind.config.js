@@ -31,7 +31,8 @@ export default {
     },
     fontFamily: {
       briem: ['Briem Hand']
-    }
+    },
+    // transform: ['backface-visibility']
   },
   plugins: [],
 }
