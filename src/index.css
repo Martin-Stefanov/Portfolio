@@ -9,7 +9,7 @@
 }
 
 .card-container{
-  @apply w-64 h-96 mt-64;
+  @apply w-80 h-96 mt-64;
   perspective: 1000px;
 }
 .card {
@@ -29,6 +29,6 @@
   @apply w-[100%] h-[100%] bg-gray-500 absolute text-white rounded-md shadow-black shadow-md;
 }
 .card-back  {
-  @apply w-[100%] h-[100%] bg-gray-950 absolute text-white rounded-md shadow-black shadow-md;
+  @apply w-[100%] h-[100%] bg-gray-950 absolute text-white rounded-md shadow-black shadow-md flex flex-col items-center justify-between;
   transform: rotateY(180deg);
 }

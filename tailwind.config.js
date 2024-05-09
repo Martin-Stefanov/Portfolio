@@ -27,6 +27,8 @@ export default {
       },
       backgroundImage: theme => ({
         'palms': "url('/palms.png')",
+        'travel-art' : "url('/travel-art-background.jpg')",
+        'connectify' : "url('/dark-linen.png')"
       })
     },
     fontFamily: {

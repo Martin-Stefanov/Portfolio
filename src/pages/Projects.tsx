@@ -4,15 +4,21 @@ import { CONNECTIFY_VIDEO, GIFIT_VIDEO, TRAVELART_VIDEO } from "../common/consta
 
 const Projects = () => {
 
+  const handleSeeMoreClick = () => {
+
+  }
+
   return (
     <div className='flex justify-center items-center space-x-32'>
       <div className="card-container">
         <div className=" card">
           <div className="card-front">
-            Connectify Logo
+            <img className="rounded-md" src="/connectify-logo2.png" alt="Connectify-Logo" />
           </div>
-          <div className="card-back">
-            Connectify Back
+          <div className="card-back bg-connectify">
+          <img className="mt-2" src="/connectify.png" alt="Connectify-Logo" />
+              <span className="mx-3">Info about the application.... Info about the application.... Info about the application.... Info about the application.... Info about the application.... Info about the application....</span>
+              <button className="mb-4">See More</button>
           </div>
         </div>
       </div>
@@ -20,10 +26,12 @@ const Projects = () => {
       <div className=" card-container">
         <div className="card">
           <div className="card-front">
-            Travel-Art Logo
+          <ProjectVideoOnHover videoPath={TRAVELART_VIDEO} />
           </div>
-          <div className="card-back">
-            Travel-Art Back
+          <div className="card-back bg-travel-art">
+              <img className="mt-2" src="/travel-art.png" alt="Connectify-Logo" />
+              <span className="mx-3">Info about the application.... Info about the application.... Info about the application.... Info about the application.... Info about the application.... Info about the application....</span>
+              <button className="mb-4">See More</button>
           </div>
         </div>
       </div>

@@ -6,12 +6,12 @@ const ProjectVideoOnHover = ({
 }) => {
 
   return (
-    <div className="relative h-[70vh]">
+    <div className="relative h-full w-full">
       <video
         autoPlay
         loop
         muted
-        className="absolute w-[52%] h-[69%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-2xl"
+        className="w-full h-full top-1/2 left-1/2 object-cover rounded-md"
       >
         <source src={videoPath} type="video/mp4" />
       </video>
