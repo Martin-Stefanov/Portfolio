@@ -12,7 +12,7 @@ const Projects = () => {
     <>
       <div className='flex justify-center items-center'>
         <div className='flex  justify-center items-center space-x-20 w-fit h-fit mt-40'>
-          <div onMouseEnter={() => setIsConnectifyHovered(true)} onMouseLeave={() => setIsConnectifyHovered(false)} className="border-black border-2 rounded-md cursor-pointer">
+          <div onMouseEnter={() => setIsConnectifyHovered(true)} onMouseLeave={() => setIsConnectifyHovered(false)} className="border-black border-2 rounded-md cursor-pointer active:translate-y-7">
             <img src="/connectify2.png" alt="Connectify Logo" />
           </div>
           <div onMouseEnter={() => setIsTravelArtHovered(true)} onMouseLeave={() => setIsTravelArtHovered(false)} className="border-black border-2 rounded-md cursor-pointer">
