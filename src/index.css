@@ -32,3 +32,18 @@
   @apply w-[100%] h-[100%] bg-gray-950 absolute text-white rounded-md shadow-black shadow-md flex flex-col items-center justify-between;
   transform: rotateY(180deg);
 }
+
+.single-logo {
+  opacity: 0;
+  animation: fadeIn 4s ease forwards;
+  @apply inline-block m-4 md:m-10 w-28 md:w-60 mt-28 md:mt-64;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
