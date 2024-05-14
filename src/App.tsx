@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage.tsx';
 import Projects from './pages/Projects.tsx';
 import Skills from './pages/Skills.tsx';
 import Hobbies from './pages/Hobbies.tsx';
+import Vinyl from './pages/Vinyl.tsx';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path='projects' element={<Projects />} />
           <Route path='skills' element={<Skills/>} />
           <Route path='hobbies' element={<Hobbies/>} />
+          <Route path='/hobbies/vinyl' element={<Vinyl/>} />
         </Routes>
       </BrowserRouter>
 
