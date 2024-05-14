@@ -6,6 +6,7 @@ import ProjectVideoOnHover from './components/ProjectVideoOnHover.tsx';
 import HomePage from './pages/HomePage.tsx';
 import Projects from './pages/Projects.tsx';
 import Skills from './pages/Skills.tsx';
+import Hobbies from './pages/Hobbies.tsx';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
           <Route path='/' element={<HomePage />} />
           <Route path='projects' element={<Projects />} />
           <Route path='skills' element={<Skills/>} />
+          <Route path='hobbies' element={<Hobbies/>} />
         </Routes>
       </BrowserRouter>
 

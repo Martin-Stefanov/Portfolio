@@ -16,7 +16,7 @@ const HomePage = () => {
           <button onClick={() => navigate('/skills')} className='main-button'>SKILLS</button>
           <button onClick={() => navigate('/projects')} className='main-button'>PROJECTS</button>
           <button className='main-button'>Where I come from</button>
-          <button className='main-button'>My Free Time</button>
+          <button onClick={() => navigate('/hobbies')} className='main-button'>Hobbies</button>
         </div>
       </div>
     </div>
