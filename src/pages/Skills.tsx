@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const Skills = () => {
 
-  const [logos, setLogos] = useState(['js-logo.jpg', 'ts-logo.png', 'html-logo.png']);
+  const [logos, setLogos] = useState(['js-logo.jpg', 'ts-logo.png', 'html-logo.png', 'css-logo.png']);
   const [displayedLogos, setDisplayedLogos] = useState<string[]>([]);
 
   const delay = (duration: number) => new Promise((resolve) => setTimeout(resolve, duration));
