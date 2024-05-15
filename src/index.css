@@ -54,7 +54,7 @@
 }
 
 .album {
-  @apply absolute top-[40%] left-[50%] right-[50%] w-[33vw] h-[33vw] rounded-md overflow-hidden bg-black;
+  @apply absolute top-[35vh] left-[50%] right-[50%] w-[30vw] h-[30vw] rounded-md overflow-hidden bg-black;
   transform: translate3d(-50%, -50%, 0);
 }
 

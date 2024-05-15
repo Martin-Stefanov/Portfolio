@@ -18,7 +18,7 @@ const Vinyl = () => {
 
 const initializeAlbums = (): void => {
   gsap.to(albumRefs.map(ref => ref.current), {
-    y: (i) => -15 + 15 * i + "%",
+    y: (i) => -17 + 15 * i + "%",
     z: (i) => 15 * i,
     duration: 1,
     ease: 'cubic',
@@ -42,7 +42,7 @@ const initializeAlbums = (): void => {
 
   return (
     <div className="relative w-[100vw] h-[89vh] overflow-hidden bg-red-400">
-      <div className="slider absolute top-[15vh] w-[100vw] h-[100vh] overflow-hidden bg-purple-500">
+      <div className="slider absolute top-[10vh] w-[100vw] h-[100vh] bg-purple-500">
         {albumRefs.map((ref, index) => (
           <div ref={ref} className="album" key={v4()}>
             <img className="w-[100%] h-[100%] object-cover" src={`/album${index}.jpg`} alt="Album Cover" />
