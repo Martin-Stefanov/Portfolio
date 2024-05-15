@@ -1,17 +1,16 @@
 
 const Vinyl = () => {
 
-
   return (
-    <div className="relative w-[100vw] h-[100vh] overflow-hidden bg-white">
-      <div className="slider absolute top-[15vh] w-[100vw] h-[100vh] overflow-hidden">
+    <div className="relative w-[100vw] h-[89vh] overflow-hidden bg-red-400">
+      <div className="slider absolute top-[15vh] w-[100vw] h-[100vh] overflow-hidden bg-purple-500">
         <div className="album">
           <img className="w-[100%] h-[100%] object-cover" src="/postmodern.jpg" alt="Postmodern Jukebox Cover" />
           <div className="copy">
             <h1>Lorem, ipsumn.</h1>
           </div>
         </div>
-        <div className="album">
+        {/* <div className="album">
           <img className="w-[100%] h-[100%] object-cover" src="/floyd.jpg" alt="Pink Floyd Cover" />
           <div className="copy">
             <h1>Lorem, ipsumn.</h1>
@@ -34,11 +33,10 @@ const Vinyl = () => {
           <div className="copy">
             <h1>Lorem, ipsumn.</h1>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )
-
 }
 
 export default Vinyl;

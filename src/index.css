@@ -47,3 +47,28 @@
     opacity: 1;
   }
 }
+
+.slider {
+  perspective: 200px; /* change here to see !!!*/
+  perspective-origin: 50% 100%;
+}
+
+.album {
+  @apply absolute top-[40%] left-[50%] right-[50%] w-[33vw] h-[33vw] rounded-md overflow-hidden bg-black;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+/* .album img {
+  position: absolute;
+  opacity: 0.75;
+}
+.copy {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+} */
+
+/* CustomEase.create("cubic, "0.83, 0, 0.17, 1"); */
