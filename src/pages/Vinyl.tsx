@@ -9,16 +9,15 @@ gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(CustomEase);
 CustomEase.create("cubic", "0.83, 0, 0.17, 1");
 
+
+
+
+
 // make isAnimating work (not clickable when in action)
-// See how to fix - when the five albums switch !!!
-
-
-
 
 const Vinyl = () => {
   // const [isAnimating, setIsAnimating] = useState(false);
   const albumRefs = Array(5).fill(0).map(_ => React.createRef<HTMLDivElement>());
-  const [clickTimes, setClickTimes] = useState(0);
 
   useEffect(() => {
     initializeAlbums()
@@ -32,13 +31,7 @@ const Vinyl = () => {
       duration: 1,
       ease: 'cubic',
       stagger: -0.1,
-      // onComplete: () => {
-      //   albumRefs.forEach((ref, index) => {
-      //     if (ref.current) {
-      //       ref.current.style.zIndex = `${index}`;
-      //     }
-      //   });
-      // }
+
     })
   };
 
@@ -53,34 +46,29 @@ const Vinyl = () => {
       return;
     }
 
-    // if (clickTimes !== 5) {
-    //   setClickTimes(clickTimes + 1);
-    // } else {
-    //   setClickTimes(0);
-    // }
     const lastAlbumRef = albumRefs.pop();
 
     if (lastAlbumRef && lastAlbumRef.current) {
-
-
       gsap.to(lastAlbumRef.current, {
         y: '+=150%',
         duration: 0.75,
         ease: 'cubic',
         onComplete: () => {
           if (lastAlbumRef.current) {
-           
+
             lastAlbumRef.current.style.zIndex = '-1';
             albumRefs.unshift(lastAlbumRef);
+            albumRefs.forEach((ref, index) => {
+              if (ref.current) {
+                ref.current.style.zIndex = `${index}`;
+              }
+            });
             initializeAlbums();
           }
-
         }
       })
     }
   }
-
-
 
   return (
     <div className="relative w-[100vw] h-[89vh] overflow-hidden bg-red-400">
