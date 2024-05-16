@@ -59,7 +59,10 @@
 }
 
 
-
+.spinning-vinyl{
+  width: 36rem;
+  height: 36rem;
+}
 /* .album img {
   position: absolute;
   opacity: 0.75;
