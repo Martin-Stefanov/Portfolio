@@ -1,8 +1,7 @@
-import { useNavigate } from "react-router-dom";
-import NavBar from "../components/NavBar";
+
 import gsap from 'gsap';
 import { useGSAP } from "@gsap/react";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 
 gsap.registerPlugin(useGSAP);
@@ -13,7 +12,6 @@ const HomePage = () => {
   const topLine = useRef<HTMLDivElement | null>(null);
   const mLetter = useRef<HTMLDivElement | null>(null);
   const sLetter = useRef<HTMLDivElement | null>(null);
-  const navigate = useNavigate();
 
   useGSAP(() => {
 

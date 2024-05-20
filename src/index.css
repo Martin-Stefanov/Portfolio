@@ -4,9 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Aladin&family=Amarante&family=Angkor&family=Briem+Hand:wght@100..900&family=Dancing+Script&family=Madimi+One&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Revolution&display=swap');
 
-/* body {
-  background-color: rgb(220, 222, 203);
-} */
 .main-button {
   @apply self-center py-4 px-4 text-4xl text-gray-300 font-bold hover:opacity-50 font-briem;
 }
@@ -78,7 +75,4 @@
   mask-image: url('mask.png');
   mask-repeat: no-repeat;
   mask-size: 70%;
-
-  /* transform: translateX(-10px); */
-
 }

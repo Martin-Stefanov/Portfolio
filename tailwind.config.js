@@ -35,35 +35,7 @@ export default {
     fontFamily: {
       briem: ['Briem Hand']
     },
-    // perspective: {
-    //   '200': '200px',
-    // }
-    // transform: ['backface-visibility']
   },
   plugins: [],
 }
 
-
-
-// /** @type {import('tailwindcss').Config} */
-// export default {
-//   content: [
-//     "./index.html",
-//     "./src/**/*.{js,ts,jsx,tsx}",
-//   ],
-//   theme: {
-//     colors: {
-//       trasparent: 'trasparent',
-//       'jaya' : {
-//         100: '#ed6a1c',
-//         200: '#d55e26',
-//         300: '#ab451f',
-//         400: '#99381e',
-//         500: '#711810',
-
-//       }
-//     },
-//     extend: {},
-//   },
-//   plugins: [],
-// }

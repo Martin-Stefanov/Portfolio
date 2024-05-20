@@ -1,8 +1,7 @@
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import React, { useEffect, useState } from "react";
+import React, { useEffect} from "react";
 import { CustomEase } from "gsap/all";
-import { SPOTIFY_PLAYLISTS } from "../common/constants";
 import { v4 } from "uuid";
 import { useNavigate } from "react-router-dom";
 
