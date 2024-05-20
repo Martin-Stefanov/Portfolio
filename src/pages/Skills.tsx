@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { v4 } from "uuid";
 
 const Skills = () => {
 
@@ -29,7 +30,7 @@ const Skills = () => {
   return (
     <div>
       {Boolean(displayedLogos.length) && removeDuplicates(displayedLogos).map((logo) => (
-        <div className="inline-block">
+        <div className="inline-block" key={v4()}>
           <img
             key={logo}
             className='single-logo'
