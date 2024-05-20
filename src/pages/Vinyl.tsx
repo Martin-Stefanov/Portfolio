@@ -20,9 +20,9 @@ const Vinyl = () => {
 
   const initializeAlbums = (): void => {
     gsap.to(albumRefs.map(ref => ref.current), {
-      // see how to change for small screen
+      // see how to change for small 
       y: (i) => -17 + 15 * i + "%",
-      z: (i) => 15 * i,
+      z: (i) => 15 * i, // change here the 15 with smaller number depending on the screen size !!
       duration: 1,
       ease: 'cubic',
       stagger: -0.1,
