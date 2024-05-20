@@ -4,19 +4,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Aladin&family=Amarante&family=Angkor&family=Briem+Hand:wght@100..900&family=Dancing+Script&family=Madimi+One&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Revolution&display=swap');
 
+/* body {
+  background-color: rgb(220, 222, 203);
+} */
 .main-button {
-  @apply self-center block h-fit w-fit py-4 px-4 text-5xl text-red-950 font-bold hover:opacity-50 font-briem;
+  @apply self-center py-4 px-4 text-4xl text-gray-300 font-bold hover:opacity-50 font-briem;
 }
 
-.card-container{
+.card-container {
   @apply w-80 h-96 mt-64;
   perspective: 1000px;
 }
+
 .card {
   @apply w-[100%] h-[100%] relative;
   transition: transform 1s;
-  transform-style: preserve-3d ;
+  transform-style: preserve-3d;
 }
+
 .card-container:hover .card {
   transform: rotateY(180deg);
 }
@@ -25,10 +30,12 @@
 .card-back {
   backface-visibility: hidden;
 }
+
 .card-front {
   @apply w-[100%] h-[100%] bg-gray-500 absolute text-white rounded-md shadow-black shadow-md;
 }
-.card-back  {
+
+.card-back {
   @apply w-[100%] h-[100%] bg-gray-950 absolute text-white rounded-md shadow-black shadow-md flex flex-col items-center justify-between;
   transform: rotateY(180deg);
 }
@@ -36,20 +43,23 @@
 .single-logo {
   opacity: 0;
   animation: fadeIn 4s ease forwards;
-  @apply inline-block m-4 md:m-10 w-28  md:w-60 mt-28 md:mt-64;
+  @apply inline-block m-4 md:m-10 w-28 md:w-60 mt-28 md:mt-64;
 }
 
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-  } to {
+  }
+
+  to {
     opacity: 1;
   }
 }
 
 .slider {
-  perspective: 200px; /* change here to see !!!*/
+  perspective: 200px;
+  /* change here to see !!!*/
   perspective-origin: 50% 100%;
 }
 
@@ -59,21 +69,16 @@
 }
 
 
-.spinning-vinyl{
+.spinning-vinyl {
   width: 36rem;
   height: 36rem;
 }
-/* .album img {
-  position: absolute;
-  opacity: 0.75;
-}
-.copy {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-} */
 
-/* CustomEase.create("cubic, "0.83, 0, 0.17, 1"); */
+.background-image {
+  mask-image: url('mask.png');
+  mask-repeat: no-repeat;
+  mask-size: 70%;
+
+  /* transform: translateX(-10px); */
+
+}
