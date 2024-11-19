@@ -9,7 +9,7 @@ const Projects = () => {
   }
 
   return (
-    <div className='flex justify-center items-center space-x-32'>
+    <div className='flex justify-center items-center space-x-32 bg-gray-300 flex-grow'>
       <div className="card-container">
         <div className=" card">
           <div className="card-front">
