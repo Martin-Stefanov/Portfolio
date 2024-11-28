@@ -19,7 +19,7 @@ const Skills = () => {
           }
           return prev;
         });
-        await delay(1500); // Delay before showing the next logo
+        await delay(900); // Delay before showing the next logo
       }
     };
     showLogos();

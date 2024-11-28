@@ -21,10 +21,10 @@ const VinylAlbum = () => {
   })
 
   return (
-    <div className="overflow-y-hidden">
+    <div className="flex flex-col items-center h-full overflow-hidden mt-10 sm:mt-0 sm:flex-row sm:justify-center">
       {album &&
         <iframe
-          className="absolute top-0 w-[28%] h-[89%] mt-24"
+          className="ml-4 sm:h-[38rem] sm:mr-6 md:mr-16 lg:h-[89%] lg:w-[28%] lg:min-w-80"
           src={`https://open.spotify.com/embed/album/${SPOTIFY_PLAYLISTS[parseInt(album)]}?utm_source=generator&theme=0`}
           frameBorder="0"
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -32,7 +32,7 @@ const VinylAlbum = () => {
         />
       }
 
-        <img ref={vinylRef} src="/vinyl.png" className=" spinning-vinyl w-128 h-128 right-0 absolute mr-80 mt-28" alt="Vinyl Disc Spinning" />
+        <img ref={vinylRef} src="/vinyl.png" className="w-44 h-44 sm:w-72 sm:h-72 md:h-96 md:w-96 lg:w-[36rem] lg:h-[36rem]" alt="Vinyl Disc Spinning" />
     
     </div>
   )
