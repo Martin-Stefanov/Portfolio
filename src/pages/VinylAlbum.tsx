@@ -40,14 +40,20 @@ const VinylAlbum = () => {
           ease: "none",
           duration: 5,
         });
-        // gsap.to(tonearmRef.current, {
-
-        // })
+        gsap.to(tonearmRef.current, {
+          rotate: "+16",
+          transformOrigin: "top center", 
+          ease: "none",
+          duration: 1,
+        })
       } else {
         gsap.killTweensOf(vinylRef.current);
-        // gsap.to(tonearmRef.current, {
-
-        // })
+        gsap.to(tonearmRef.current, {
+          rotate: "0",
+          transformOrigin: "top center",
+          ease: "none",
+          duration: 2, 
+        })
       }
     }
   }, [playing]);
