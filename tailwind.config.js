@@ -30,7 +30,9 @@ export default {
         'travel-art' : "url('/travel-art-background.jpg')",
         'connectify' : "url('/dark-linen.png')",
         'test1' : "url(/test1.jpg)",
-        'turntable' : "url(/wood.jpg)"
+        'turntable' : "url(/wood.jpg)",
+        'music': "url(/Hobbies/music.png)",
+        'camping': "url(/Hobbies/camping2.png)"
       }),
       boxShadow: {
         'turntable': '4px 4px 60px 8px black',
