@@ -42,6 +42,6 @@ export default {
       briem: ['Briem Hand']
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/aspect-ratio')],
 }
 
