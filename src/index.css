@@ -57,11 +57,11 @@
 .slider {
   perspective: 200px;
   /* change here to see !!!*/
-  perspective-origin: 50% 100%;
+  perspective-origin: 50% 18%;
 }
 
 .album {
-  @apply absolute top-[35vh] left-[50%] right-[50%] w-[30vw] h-[30vw] rounded-md overflow-hidden bg-black;
+  @apply absolute top-24 sm:top-32 md:top-44 xl:top-60 2xl:top-72 lg:top-52 left-[50%] right-[50%] w-[28vw] h-[28vw] rounded-md overflow-hidden;
   transform: translate3d(-50%, -50%, 0);
 }
 
