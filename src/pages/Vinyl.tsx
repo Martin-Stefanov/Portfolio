@@ -107,7 +107,7 @@ const Vinyl = () => {
               data-custom-prop={index}
             >
               <img
-                className="w-[100%] h-[100%] object-cover"
+                className="w-[100%] h-[100%] object-cover cursor-pointer"
                 src={`/album${index}.jpg`}
                 alt="Album Cover"
               />
@@ -116,21 +116,26 @@ const Vinyl = () => {
         </div>
       </div>
       {/* <img onClick={handleSpotifyIconClick} className="top-0 right-0 w-24 h-24 absolute mt-80 mr-20 cursor-pointer" src="/spotify-logo.png" alt="Spotify Logo" /> */}
-      {/* <div
-        className="absolute flex items-center w-72 min-w-72 h-56 bg-turntable p-3 pt-6 mr-10 shadow-turntable cursor-pointer"
-        onClick={handleSpotifyIconClick}
+      <div
+        className="absolute flex items-center w-72 min-w-80 h-56 bg-turntable p-3 pt-6 bottom-0 left-1/3 xl:left-auto xl:right-0 xl:top-1/3  mr-10 shadow-turntable"
+        onDragOver={(e) => e.preventDefault()}
+        onDrop={handleSpotifyIconClick}
       >
+        <div className="text-center mb-40">
+        <span className=" text-red-700 font-bold text-xl">DROP HERE</span>
+        </div>
+          
         <img
-          src="/vinyl.png"
-          className="w-44 h-44 ml-4"
+          src="/turntable-mat.png"
+          className="w-44 h-44"
           alt="Vinyl Disc Spinning"
         />
         <img
           src="/Hobbies/tonearm1.png"
-          className="h-36 mb-9 md:mb-16 "
+          className="h-36 mb-16 "
           alt="Tonearm"
         />
-      </div> */}
+      </div>
     </>
   );
 };
