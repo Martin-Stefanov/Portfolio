@@ -37,6 +37,7 @@ const Hobbies = () => {
       >
         {/* Hobby Block */}
         <div
+        onClick={() => navigate("/hobbies/camping")}
           className="cursor-pointer bg-camping bg-cover bg-center rounded-xl hover:shadow-2xl hover:shadow-black transition w-full h-full"
         ></div>
 

@@ -14,13 +14,16 @@
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "firebase-hooks": "^0.0.1",
     "gsap": "^3.12.5",
+    "leaflet": "^1.9.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-firebase-hooks": "^5.1.1",
+    "react-leaflet": "^4.2.1",
     "react-router-dom": "^6.23.0",
     "uuid": "^9.0.1"
   },
   "devDependencies": {
+    "@types/leaflet": "^1.9.15",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@types/uuid": "^9.0.8",

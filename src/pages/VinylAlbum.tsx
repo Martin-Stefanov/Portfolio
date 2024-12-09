@@ -17,6 +17,7 @@ const VinylAlbum = () => {
       if (event.origin !== "https://open.spotify.com") return;
 
       const data = event.data;
+      //throws an error in the console because data.payload.isPaused = undefined on first render
       if (data.payload.isPaused) {
         setPlaying(false);
       } else {
