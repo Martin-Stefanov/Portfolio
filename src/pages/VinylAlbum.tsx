@@ -1,10 +1,8 @@
 import { useParams } from "react-router-dom";
-import { SPOTIFY_PLAYLISTS } from "../common/constants";
+import { SPOTIFY_ALBUMS } from "../common/constants";
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 import { useEffect, useRef, useState } from "react";
 
-gsap.registerPlugin(useGSAP);
 
 const VinylAlbum = () => {
   const { album } = useParams();
@@ -17,8 +15,7 @@ const VinylAlbum = () => {
       if (event.origin !== "https://open.spotify.com") return;
 
       const data = event.data;
-      //throws an error in the console because data.payload.isPaused = undefined on first render
-      if (data.payload.isPaused) {
+      if (!data.payload || data.payload.isPaused) {
         setPlaying(false);
       } else {
         setPlaying(true);
@@ -64,7 +61,7 @@ const VinylAlbum = () => {
         <iframe
           className="ml-4 sm:h-[38rem] sm:mr-6 lg:mr-16 lg:h-[89%] lg:w-[28%] lg:min-w-80"
           src={`https://open.spotify.com/embed/album/${
-            SPOTIFY_PLAYLISTS[parseInt(album)]
+            SPOTIFY_ALBUMS[parseInt(album)]
           }?utm_source=generator&theme=0`}
           frameBorder="0"
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
